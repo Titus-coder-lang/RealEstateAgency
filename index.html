@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Real Estate Agency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="animate-on-scroll">
+        <div class="container">
+            <h1>Prime Real Estate Agency</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#mortgage-calculator">Mortgage Calculator</a></li>
+                    <li><a href="#viewing-request">Schedule Viewing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero animate-on-scroll">
+        <div class="hero-content">
+            <h2>Find Your Dream Home with Us</h2>
+            <p>Explore top-quality listings and calculate your mortgage with ease.</p>
+            <a href="#properties" class="btn">Explore Properties</a>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="animate-on-scroll">
+        <h2>Our Featured Properties</h2>
+        <div class="property-list">
+            <div class="property-card animate-on-scroll">
+                <img src="images/property1.jpg" alt="Property 1">
+                <h3>Modern Apartment</h3>
+                <p>Starting from $250,000</p>
+                <button>View Details</button>
+            </div>
+            <div class="property-card animate-on-scroll">
+                <img src="images/property2.jpg" alt="Property 2">
+                <h3>Family House</h3>
+                <p>Starting from $450,000</p>
+                <button>View Details</button>
+            </div>
+        </div>
+    </section>
+
+<!-- Mortgage Calculator Section -->
+<section id="mortgage-calculator" class="animate-on-scroll">
+    <h2>Calculate Your Mortgage</h2>
+    <form id="calculator-form">
+        <input type="number" placeholder="Property Price ($)" required>
+        <input type="number" placeholder="Down Payment ($)" required>
+        <input type="number" placeholder="Annual Interest Rate (%)" required>
+        <input type="number" placeholder="Loan Term (years)" required>
+        <button type="button" onclick="calculateMortgage()">Calculate</button>
+        <button type="button" class="reset-btn" onclick="resetCalculator()">Reset</button>
+        <p id="mortgage-result"></p>
+    </form>
+</section>
+
+    <!-- Viewing Request Form -->
+    <section id="viewing-request" class="animate-on-scroll">
+        <h2>Request a Property Viewing</h2>
+        <form id="viewing-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Property ID or Details" required></textarea>
+            <button type="submit">Request Viewing</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="animate-on-scroll">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="animate-on-scroll">
+        <p>Prime Real Estate Agency &copy; 2024. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
